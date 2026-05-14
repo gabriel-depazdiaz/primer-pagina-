@@ -8,14 +8,13 @@
 }
 
 body{
+    background-color: #000000;
     margin: 0;
-    background-color: var(--color-azul:#001F54);
+    background-color: var(--color-azul);
     font-family: 'Roboto', sans-serif;
     color: white;
     color: rgb(25, 95, 156);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
 }  
 
 .name {
@@ -24,7 +23,7 @@ body{
 }
 
 section{
-    background-color: --bs-body-color;
+    background-color: var(--color-negro);
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -34,7 +33,7 @@ section{
 
 .encabezado{
     width: 100%;
-    background-color: var(--bs-blue);
+    background-color: var(--color-azul);
     height: 60px;
     padding: 5px 0%; /* El primero indica arriba y abajo el segundo a los lados */
     display: flex;
@@ -46,7 +45,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--bs-blue);
+    background-color: var(--color-azul);
     padding: 10px 20px;
     position: fixed; /* Mantiene la barra arriba */
     top: 0;
@@ -56,16 +55,37 @@ nav {
 
 .barra-menu{
     width: 100%;
-    background-color: var(--bs-blue);
-    display: flex;
-    justify-content:center;
-    align-items: center;
+    background-color: var(--color-azul);
+    display:inline;
 }
 
 .contenedor-menu{
-    display:inline-flex;
+    background-color: var(--color-azul);
+    display:flex;
+ justify-content: space-between;
+    align-items: center;
     padding: 5px;
-    width: auto;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.boton-menu{
+    display: none;
+    font-weight: 700; 
+    color: white;
+    padding: 0.8rem;
+    background-color: #bce5ab;
+    border: none;
+    border-radius: 0.5rem ;
+    cursor: pointer; /* Cambia el cursor a la manito */
+    transition: all 0.3s ease 0s; /* Tiempo de cambio de hover */
+}
+
+.logo{
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-decoration: none;
 }
 
 .boton-menu{
@@ -112,7 +132,7 @@ nav {
 }
 
 .info{
-    background-image: url(../assets/img/fondo.jpg);
+    background-image: url(../assets/portafolio/80.webp);
 }
 
 .info p{
@@ -124,7 +144,7 @@ nav {
 }
 
 .contenedor-tarjetas{
-     background-color: #000000;
+    background-color: #000000;
     width: 100%;
     margin-top: 20px;
     display: grid;
@@ -135,8 +155,8 @@ nav {
 
 .tarjeta{
     background-color: rgb(70, 86, 116);
-     color: rgb(0, 0, 0);
-    width: 380px;
+    color: rgb(0, 0, 0);
+    width: 300px;
     padding: 1cm;
     border-radius: 15px;
     border: 1px solid blueviolet;
@@ -150,11 +170,11 @@ nav {
     width: 336px;
 }
 
-.sobremi{
+.sobre-mi{
      justify-content: center;
     align-items: center;
-    background-image: url(../assets/portafolio/70.jpg);
-    font-size: 5cm;
+    background-image: url(../assets/portafolio/80.webp);
+    font-size: 1.5cm;
 }
 
 .dos-columnas {
@@ -224,15 +244,27 @@ nav {
   color: #fff;
 }
 
-.avatar{
-    background-image: url(../assets/portafolio/avatar/111);
 
+.contenedor-formulario{
+    background-color: var(--bs-gray);
+    width: 50%;
+    padding: 25px;
+    border-radius: 20px;
+}
+
+#formulario{
+    display: flex;
+    flex-direction: column;
+}
+
+#formulario label{
+    margin-top: 10px;
 }
 
 .info{
     justify-content: center;
     align-items: center;
-    background-image: url(../assets/portafolio/70.jpg);
+    background-image: url(../assets/portafolio/80.webp);
 }
 
 @media (max-width: 768px){
